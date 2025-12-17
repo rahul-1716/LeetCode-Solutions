@@ -17,5 +17,6 @@ var getDescentPeriods = function(prices) {
     return result;
 };
 
+
 console.log(getDescentPeriods([3,2,1,4])); // 7
 console.log(getDescentPeriods([8,6,7,7])); // 4
