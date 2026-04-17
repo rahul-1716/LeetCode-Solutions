@@ -1,0 +1,78 @@
+ X  X  X  X  X 
+ X  X  X  X  X 
+ X  X  X  X  X 
+ X  X  X  X  X 
+ X  X  X  X  X 
+
+ X 
+ X  X 
+ X  X  X 
+ X  X  X  X 
+ X  X  X  X  X 
+
+1
+12
+123
+1234
+12345
+
+1
+22
+333
+4444
+55555
+
+ X  X  X  X  X 
+ X  X  X  X 
+ X  X  X 
+ X  X 
+ X 
+
+12345
+1234
+123
+12
+1
+
+    X 
+   XXX   
+  XXXXX     
+ XXXXXXX       
+XXXXXXXXX         
+
+XXXXXXXXXXXXXXX
+ XXXXXXXXXXXXX
+  XXXXXXXXXXX
+   XXXXXXXXX
+    XXXXXXX
+     XXXXX
+      XXX
+       X
+
+    X 
+   XXX   
+  XXXXX     
+ XXXXXXX       
+XXXXXXXXX         
+XXXXXXXXX
+ XXXXXXX
+  XXXXX
+   XXX
+    X
+
+X
+XX
+XXX
+XXXX
+XXXXX
+XXXXXX
+XXXXXXX
+XXXXXXXX
+XXXXXXX
+XXXXXX
+XXXXX
+XXXX
+XXX
+XX
+X
+
