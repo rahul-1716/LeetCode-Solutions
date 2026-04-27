@@ -1,44 +1,48 @@
-#include<bits/stdc++.h>
-
+#include <bits/stdc++.h>
+using namespace std;
 
 class Solution {
 public:
     vector<int> solveQueries(vector<int>& nums, vector<int>& queries) {
-        int n = nums.size();
-
+        const int n = nums.size();
         unordered_map<int, vector<int>> positions;
 
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             positions[nums[i]].push_back(i);
         }
 
         vector<int> answer(n, -1);
 
-        for(auto& entry : positions){
+        for (auto& entry : positions) {
             vector<int>& pos = entry.second;
-            int m = pos.size();
+            const int m = pos.size();
 
-            if(m == 1) continue;
+            if (m == 1) {
+                continue;
+            }
 
-            for(int i = 0; i < m; i++){
-                int curr = pos[i];
+            for (int i = 0; i < m; i++) {
+                const int current = pos[i];
+                const int previous = pos[(i - 1 + m) % m];
+                const int next = pos[(i + 1) % m];
 
-                int prev = pos[(i - 1 + m) % m];
-                int next = pos[(i + 1) % m];
+                int distancePrevious = abs(current - previous);
+                distancePrevious = min(distancePrevious, n - distancePrevious);
 
-                int distPrev = abs(curr - prev);
-                distPrev = min(distPrev, n - distPrev);
+                int distanceNext = abs(current - next);
+                distanceNext = min(distanceNext, n - distanceNext);
 
-                int distNext = abs(curr - next);
-                distNext = min(distNext, n - distNext);
-
-                answer[curr] = min(distPrev, distNext);
+                answer[current] = min(distancePrevious, distanceNext);
             }
         }
+
         vector<int> result;
-        for(int idx : queries){
-            result.push_back(answer[idx]);
+        result.reserve(queries.size());
+
+        for (int index : queries) {
+            result.push_back(answer[index]);
         }
+
         return result;
     }
 };
