@@ -4,3 +4,5 @@ var minPartitions = function(n){
         maxDigit = Math.max(maxDigit, char)
     return maxDigit;
 }
+
+//vsfv
